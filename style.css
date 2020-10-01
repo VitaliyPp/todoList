@@ -1,0 +1,32 @@
+* {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+#wrapper {
+  width: 45%;
+  height: 100vh;
+  background-color: rgb(129, 221, 183);
+  margin: auto;
+  padding-top: 10px;
+}
+
+button, p, input {
+  margin: 10px;
+}
+
+button {
+  padding: 4px 10px;
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 25%;
+  height: 50px;
+  background: #000;
+}
