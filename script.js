@@ -3,8 +3,15 @@ let main =     document.getElementById('main');
 let modal =    document.getElementById('modal');
 let modInput = document.getElementById('mod');
 let save =     document.getElementById('save');
+let clear =    document.getElementById('deleteAll');
 let add =      document.getElementById('add').onclick = Add;
-let clear =    document.getElementById('deleteAll').onclick = deleteAll;
+
+let create =   input.onkeydown = Create;
+clear.onclick = deleteAll;
+
+function Create(e) {
+  if(e.key === 'Enter') Add();
+}
 
 function Add() {
   function repeat() {
@@ -66,3 +73,11 @@ function Add() {
 function deleteAll () {
   while (main.firstChild) main.removeChild(main.firstChild);
 }
+
+setInterval(() => {
+  if (main.firstChild) {
+    clear.style.display = 'inline';
+  } else {
+    clear.style.display = 'none';
+  }
+}, 10);

@@ -30,3 +30,7 @@ button {
   height: 50px;
   background: #000;
 }
+
+#deleteAll {
+  display: none;
+}
